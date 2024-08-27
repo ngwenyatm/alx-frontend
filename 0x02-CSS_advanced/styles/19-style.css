@@ -1,4 +1,4 @@
-@import url('/alx-frontend/0x02-CSS_advanced/styles/node_modules/normalize.css');
+@import 'normalize.css';
 :root{
 	--color-primary: #d73953;
 	--color-black: #090909;
@@ -37,12 +37,14 @@
 	--nav-item-margin: 0 0 3rem;
 	--nav-item-link-hover: var(--color-primary);
 }
-*, *::before, *::after{
+*{
 	box-sizing: border-box;
-}
-html{
-	scroll-behavior: smooth;
-	font-size: 62.5%;
+} 
+*::before{
+	box-sizing: border-box;
+} 
+*::after{
+	box-sizing: border-box;
 }
 body{
 	color: var(--text-color);
